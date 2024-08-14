@@ -1,0 +1,183 @@
+Basic input and output level_0
+
+Questions:
+
+1.Print the following output : Success is when your "signature" becomes "autograph"
+
+
+2.Print the following output : \\n
+
+
+3.Print the following output : Let's learn 'C' together with MySlate Team
+
+
+4.Print the following output : %%
+
+
+5.Print the following output : \\
+
+
+6.Read an integer and print the accepted integer value
+
+
+7.Accept a character and print the character
+
+
+8.Declare 2 integer variables and initialize their values as 20 and 10
+
+
+9.Given 2 numbers, print the first number as a 5-digit number and print the second number in the next line with 5 width space
+
+Explanation: If numbers are 25 and 98,print the first number as 00025 and second number as 3 space and 98(   98).
+
+
+
+10.Accept an integer  and print the number along with its sign.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Answers:
+
+
+1.#include <stdio.h>
+
+int main() {
+
+printf(" Success is when your \"signature\" becomes \"autograph\"");
+
+return 0;
+
+}
+
+
+
+
+
+2.
+#include<stdio.h>
+int main() 
+{
+ printf("\\\\n");
+ return 0;
+}
+
+
+3.#include<stdio.h>
+int main() 
+{
+ printf(""Let's learn 'C' together with MySlate Team"");
+ return 0;
+}
+
+
+
+
+4.#include<stdio.h>
+int main() 
+{
+ printf("%%%%");
+ return 0;
+}
+
+
+5.#include<stdio.h>
+int main() 
+{
+ printf("\\\\");
+ return 0;
+}
+
+
+6.#include<stdio.h>
+int main() 
+{
+long long int num;
+scanf("%lld",&num);
+printf("%lld",num);
+return 0;
+}
+
+
+7.#include<stdio.h>
+int main() 
+{
+char ch;
+scanf("%c",&ch);
+printf("%c",ch);
+return 0;
+}
+
+
+
+8.#include<stdio.h> 
+int main()
+{
+    int num1=20,num2=10;
+    printf("%d %d",num1,num2);
+    return 0;
+}
+
+
+
+9.#include<stdio.h> 
+int main()
+{
+long int num1,num2;
+scanf("%ld %ld",&num1,&num2);
+printf("%05ld\n%5ld",num1,num2);
+return 0;
+}
+
+
+10.#include <stdio.h>
+int main()
+{
+    long long int num;
+    scanf("%lld",&num);
+    printf("%+lld",num);
+    return 0;
+}
+
+
+
+
+
+
+
+

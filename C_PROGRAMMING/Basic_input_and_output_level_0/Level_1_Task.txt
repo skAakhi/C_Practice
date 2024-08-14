@@ -1,0 +1,178 @@
+
+
+
+
+
+
+
+1.Accept a character and print its corresponding ASCII value.
+
+
+2. Accept an integer value and print the corresponding character associated with the integer value.
+
+
+3.Round off the given floating point value with accurate to 2 decimal places.
+
+
+4.Accept a floating point value and print it with 20 width space and round off to 4 decimal places.
+
+
+5.Accept a floating point  value and precision value and print the floating point  value according to the precision given.
+
+
+6.Display the given floating point value to its nearest integer value
+
+
+7.Accept a number . If a number starts with digit 0, it indicates a octal value. If a number starts with 0x it indicates that the number is a hexadecimal value. Print the corresponding decimal value.
+
+
+8.Accept a float value as input and print the same in its exponential form
+
+
+9.Get a value and print its corresponding hexadecimal number
+
+
+10.Get a floating point value and print the floating point value without any trailing zeros.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+1A.#include<stdio.h> 
+int main()
+{
+    char ch;
+    scanf("%c",&ch);
+    printf("%c:%d",ch,ch);
+    return 0;
+}
+
+
+
+
+2A.#include<stdio.h> 
+int main()
+{
+  int val;
+  scanf("%d",&val);
+  if(val>=0 && val<=127)
+    printf("%d:%c",val,val);
+  else 
+    printf("%d:Invalid Input",val);
+   return 0;
+}
+
+
+
+
+3A.#include<stdio.h>
+int main()
+{
+long double fnum;
+scanf("%Lf",&fnum);
+printf("%.2Lf",fnum);
+return 0;
+}
+
+
+
+4A.#include<stdio.h>
+int main()
+{
+long double num;
+scanf("%Lf",&num);
+printf("%20.4Lf",num);
+return 0;
+}
+
+
+
+5A.#include<stdio.h>
+int main()
+{
+long double num;
+int precision;
+scanf("%Lf %d",&num,&precision); 
+printf("%.*Lf",precision,num);
+return 0;
+}
+
+
+
+6A.#include<stdio.h>
+int main()
+{
+long double fnum;
+scanf("%Lf",&fnum);
+printf("%.0Lf",fnum);
+return 0;
+}
+
+
+
+7A.#include<stdio.h> 
+int main()
+{
+    int num;
+    scanf("%i",&num);
+    printf("%d",num);
+    return 0;
+}
+
+
+
+8A.#include<stdio.h> 
+int main()
+{
+    float fnum;
+    scanf("%f",&fnum);
+    printf("%e",fnum);
+    return 0;
+}
+
+
+
+9A.#include<stdio.h>
+int main()
+{
+    long long int llnum;
+    scanf("%lld",&llnum);
+    printf("%llX",llnum);//------->FOR SMALL HEX DECI SMALL(x)
+    return 0;
+}
+
+
+
+10A.#include<stdio.h>
+int main()
+{
+double num;
+scanf("%lf",&num);
+printf("%g",num);
+return 0;
+}
+

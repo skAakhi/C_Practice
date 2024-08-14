@@ -1,0 +1,244 @@
+
+
+
+
+
+1.Get 2 integer inputs and display their sum.
+
+
+
+2.Get two integers from user and print the absolute difference between two integers
+
+
+
+3.Multiply two decimal numbers and print the product with a precision of 2 decimal places .
+
+
+
+4.Accept two integers and print quotient  with 16 decimal places and print the remainder in next line.
+
+
+
+5.Given two numbers, Swap those two numbers with temporary variable
+
+
+
+6.Given two numbers, Swap those two numbers without using temporary variable
+
+
+
+7.Accept a number as input which will be 1 or 2 ,  If it is 1, print 2. If it is 2, print 1.
+(without using conditional statement)
+
+
+
+8.Given an integer input, print the Absolute value of the input
+number
+
+
+
+9.Write a program to read the total seconds and print the seconds in time formet Examble :hr:min:sec
+
+
+
+
+10.Write a program to calculate the number of years,weeks and the remaining days for the given total days
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+1A.
+#include <stdio.h>
+int main()
+{
+   long long int N1,N2;
+   scanf("%lld %lld",&N1,&N2);
+   printf("Sum of %lld and %lld is %lld",N1,N2,N1+N2);
+   return 0;
+}
+
+
+
+
+2A.
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+   int N1,N2;
+   scanf("%d%d",&N1,&N2);
+   printf("%d",abs(N1-N2));
+   return 0;
+}
+
+
+
+
+
+3A.
+#include <stdio.h>
+int main()
+{
+    float N1,N2;
+    scanf("%f%f",&N1,&N2);
+    printf("%.2f",N1*N2);
+   return 0;
+}
+
+
+
+
+4A.
+#include <stdio.h>
+int main()
+{
+    int N1,N2;
+    scanf("%d%d",&N1,&N2);
+    long double ans;
+    ans=(long double)N1/N2;
+    printf("The quotient when %d is divided by %d is %.16Lf",N1,N2,ans);
+    printf("\nThe remainder when %d is divided by %d is %d",N1,N2,N1%N2);
+}
+
+
+
+
+
+
+5A.
+#include<stdio.h>
+int main()
+{
+  int N1,N2,temp;
+  scanf("%d%d",&N1,&N2);
+  temp=N1;
+  N1=N2;
+  N2=temp;
+  printf("num1=%d\nnum2=%d",N1,N2);
+  return 0;
+}
+
+
+
+
+6A.
+#include<stdio.h>
+int main()
+{
+  int num1,num2;
+  scanf("%d%d",&num1,&num2);
+  num1=(num1+num2);
+  num2=num1-num2;
+  num1=num1-num2;
+  printf("num1=%d\nnum2=%d",num1,num2);
+  return 0;
+}
+
+
+
+
+7A.
+#include<stdio.h>
+int main()
+{
+int num;
+scanf("%d",&num);
+printf("%d",3-num);
+}
+
+
+
+8A.
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  int num;
+  scanf("%d",&num);
+  printf("%d",abs(num));
+  return 0;
+}
+
+
+
+
+9A.
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+    int tot_sec;
+    int hour;
+    int min;
+    int sec;
+    scanf(""%d"", &tot_sec);
+    hour = tot_sec/3600;
+    min  = (tot_sec%3600)/60;
+    sec  = (tot_sec%3600)%60;
+    printf("%02d:HOUR %02dMIN :%02dSEC", hour, min, sec);
+    
+}
+
+
+
+
+
+10A.
+#include<stdio.h>
+int main()
+{
+ long long int nod;
+ int days,week,year;
+ scanf("%lld",&nod);
+ year=nod/365;
+ week=(nod%365)/7;
+ days=(nod%365)%7;
+ printf("Number of Years:%d\n",year);
+ printf("Number of Week:%d\n",week);
+ printf("Number of Days:%d",days);
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
